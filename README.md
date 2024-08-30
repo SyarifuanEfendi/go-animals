@@ -54,7 +54,7 @@ Clone the project
 Go to the project directory
 
 ```bash
-  cd todo-list
+  cd go-animals
 ```
 
 Docker build
