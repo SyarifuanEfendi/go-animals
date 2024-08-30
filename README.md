@@ -72,7 +72,7 @@ Check Containers
 ## Postman
 
 ```
-  Import Collection file in directory postman to Postman
+  Import Collection file in directory postman to Postman Application
 ```
 
 ## API Reference
