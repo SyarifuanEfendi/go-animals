@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "c04602bb-835a-46b2-bd7e-792b736c7a5f",
+		"name": "Animals",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5679122"
+	},
+	"item": [
+		{
+			"name": "List Animals",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/animals",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"animals"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Animals get by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/animals/4",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"animals",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Animals",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"duck\",\r\n    \"class\": \"oviparous\",\r\n    \"legs\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/animals",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"animals"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Animals",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"lion\",\r\n    \"class\": \"mammals\",\r\n    \"legs\": 4\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/animals/4",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"animals",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Animals",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/animals/4",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"animals",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
